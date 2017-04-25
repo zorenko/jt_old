@@ -117,14 +117,6 @@ li {
   background-image: url("../pic/japan.jpg");
   background-position: 45% 50%;
 }
-.vietnam .content-block-header{
-  background-image: url("../pic/vietnam.jpg");
-  background-position: 0 45%;
-}
-.ireland .content-block-header {
-  background-image: url("../pic/ireland.jpg");
-  background-position: 45% 70%;
-}
 .greece .content-block-header {
   background-image: url("../pic/greece.jpg");
   background-position: 45% 90%;
@@ -137,12 +129,13 @@ li {
   background-image: url("../pic/uae.jpg");
   background-position: 45% 80%;
 }
-.czech .content-block-header {
-  background-image: url("../pic/czech.jpg");
-}
 .tourism.page {
   background-image: url("../pic/tourism.jpg");
   background-position: 50% 70%;
+}
+.ferry .content-block-header {
+  background-image: url("../pic/ferry.jpg");
+  background-position: 50% 60%;
 }
 .stpeterline .content-block-header {
   background-image: url("../pic/stpeterline.jpg");
@@ -155,9 +148,6 @@ li {
 .tour .content-block-header {
   background-image: url("../pic/tour.jpg");
   background-position: 50% 40%;
-}
-.ski .content-block-header {
-  background-image: url("../pic/ski.jpg");
 }
 .insurances .content-block-header {
   background-image: url("../pic/insurances.jpg");
@@ -173,10 +163,6 @@ li {
 .about .content-block-header {
   background-image: url("../pic/office.jpg");
   background-position: 50% 90%;
-}
-.japanrailway .content-block-header {
-  background-image: url("../pic/japanrailway.jpg");
-  background-position: 50% 50%;
 }
 .contacts-map {
   background-image: url("../pic/map.png");
@@ -233,16 +219,6 @@ li {
   background-image: url("../pic/japan-small.jpg");
   background-position: 70% 70%;
 }
-.vietnam.pic-link-bg {
-  background-image: url("../pic/vietnam-small.jpg");
-}
-.ireland.pic-link-bg {
-  background-image: url("../pic/ireland-small.jpg");
-  background-position: 70% 70%;
-}
-.czech.pic-link-bg {
-  background-image: url("../pic/czech-small.jpg");
-}
 .insurance.pic-link-bg {
   background-image: url("../pic/insurance-small.jpg");
 }
@@ -255,13 +231,27 @@ li {
 .stpeterline.pic-link-bg {
   background-image: url("../pic/stpeterline-small.jpg");
 }
+.ferry.pic-link-bg {
+  background-image: url("../pic/ferry-small.jpg");
+}
 .bus.pic-link-bg {
   background-image: url("../pic/bus-small.jpg");
 }
-.japanrailway.pic-link-bg {
-  background-image: url("../pic/japanrailway-small.jpg");
-  background-position: 70% 70%;
+
+/*
+.tour2.pic-link-bg {
+  background-image: url("../pic/tour6.jpg");
 }
+.tour3.pic-link-bg {
+  background-image: url("../pic/tour2.jpg");
+}
+.tour4.pic-link-bg {
+  background-image: url("../pic/tour5.jpg");
+}
+.tour5.pic-link-bg {
+  background-image: url("../pic/tour4.jpg");
+}*/
+
 
 /* ================ ОБЩИЕ СТИЛИ ================ */
 .container {
@@ -363,7 +353,7 @@ li {
   z-index: 1;
 }
 .menu {
-  width: 775px;
+  width: 760px;
 }
 .menu-item {
   display: inline-block;
@@ -454,9 +444,6 @@ li {
 }
 .submenu-item-visa:last-child {
   margin-right: 0;
-}
-.submenu-item.tourism .submenu-item-visa {
-  width: 185px;
 }
 .btn {
   padding: 10px 45px;
@@ -617,6 +604,7 @@ li {
 }
 .content-block a {
   color: #00a2ff;
+  /*color: #FF5858;*/
   text-decoration: underline;
 }
 .content-block a:hover {
@@ -658,22 +646,20 @@ li {
   color: #fff;
 }
 .content-block-header-bg {
-  background: rgba(50,50,50,0.65);
+  background: rgba(50,50,50,0.45);
   padding-top: 200px;
-  padding-bottom: 180px;
+  padding-bottom: 40px;
 }
 .content-block-main-title {
-  font-size: 56px;
+  font-size: 50px;
   line-height: 50px;
-  font-weight: 400;
-  margin-bottom: 14px;
+  font-weight: 300;
+  margin-bottom: 8px;
   font-family: 'Ubuntu', Arial, sans-serif;
-  text-align: center;
 }
 .content-block-description {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 15px;
-  text-align: center;
 }
 
 
@@ -710,7 +696,8 @@ li {
 .content-block-contact-btn {
   display: inline-block;
   position: relative;
-  background: #ffb300;
+  /*background: #00a2ff;*/
+  background: #F64747;
   padding: 15px 50px;
   margin-top: 20px;
   left: 50%;
@@ -721,7 +708,8 @@ a.content-block-contact-btn  {
   color: #fff;
 }
 a.content-block-contact-btn:hover {
-  background: #ffa000;
+  /*background: #057CE8;*/
+  background: #EA2F2F;
   color: #fff;
 }
 
@@ -959,8 +947,10 @@ a.content-block-contact-btn:hover {
 /* ============ СТРАНИЦЫ С ВИЗАМИ ============ */
 /*visa important info*/
 .visa-page-info {
-  background: #292f33;
-  padding: 30px 0 25px;
+  /*background: #F7F8FA;*/
+  background: #F64747;
+  border-bottom: 1px solid #D25F5F;
+  padding: 25px 0 20px;
 }
 .visa-page-info-item {
   display: block;
@@ -979,7 +969,7 @@ a.content-block-contact-btn:hover {
   line-height: 12px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #667580;
+  color: #A90F0F;
 }
 .visa-page-info-item li:nth-child(2)>span {
   display: inline-block;
@@ -1018,6 +1008,7 @@ b {
   color: #fff;
   padding: 1px 5px;
   border-radius: 3px;
+  /*background: #FF5858;*/
   background: #27CBEA;
   background: #39C4F3;
   letter-spacing: 0.03em;
@@ -1108,9 +1099,7 @@ b {
 .panel0,
 .panel1,
 .panel2,
-.panel3,
-.panel4,
-.panel5 {
+.panel3 {
   display: none;
 }
 
@@ -1449,7 +1438,7 @@ b {
 .tour .visa-page-right .p {
   margin-bottom: 15px;
 }
-.tour .visa-page-right .vk {
+.tour .vk {
   margin-bottom: 40px;
 }
 
@@ -1540,7 +1529,7 @@ caption {
 
 .about .content-block-header-bg {
   background: rgba(47,42,42,0.65);
-  padding: 156px 0;
+  padding: 120px 0;
 }
 .about .content-block-main-title {
   margin-bottom: 14px;
@@ -1603,11 +1592,6 @@ caption {
   border-radius: 3px;
   padding: 1px 5px;
   font-size: 13px;
-}
-
-.japan .pic-link-bg.big {
-  width: 100%;
-  margin-bottom: 50px;
 }
 
 
